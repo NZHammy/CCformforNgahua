@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Cannaform Filler
+// @name         Cannaform filler
 // @namespace    https://ham.software
 // @version      1.0
-// @description  Automatically fills out pharmacy information on Cannabis clinic form
+// @description  Automatically fills out pharmacy information on Cannabis clinics form
 // @author       Ham
 // @match        https://cannabisclinic.co.nz/thc-controlled-drug-script-to-own-pharmacy/
 // @grant        none
@@ -11,7 +11,6 @@
 (function() {
     'use strict';
 
-    // Replace with the actual field IDs of the WooCommerce form
     var pharmacyNameFieldId = 'input_14_13_3';
     var pharmacyEmailFieldId = 'input_14_15';
     var pharmacyPhoneFieldId = 'input_14_14';
@@ -40,6 +39,7 @@
         document.getElementById(addressLine2FieldId).value = pharmacyInfo.addressLine2;
         document.getElementById(cityFieldId).value = pharmacyInfo.city;
         document.getElementById(zipCodeFieldId).value = pharmacyInfo.zipCode;
+
 
     }
 
